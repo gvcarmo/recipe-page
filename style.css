@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flexbox;
+    min-width: 375px;
+    max-width: 1440px;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+img {
+    text-align: center;
+    border-radius: 10px; 
+    width: 100%;       
+}
+
+h1 {
+    font-family: 'Young Serif';
+    color: hsl(24, 5%, 18%);
+}
+
+p {
+    font-size: 16px;
+    font-family: Outfit;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+ul {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    padding: 3px;
+    font-family: Outfit;
+    padding-left: 20px;
+    color: hsl(24, 5%, 18%);
+}
+
+.main {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.destaque {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.destaque ul {
+    padding-left: 30px;
+}
+
+.destaque ul li {
+    padding: 3px;
+    font-family: Outfit;
+    padding-left: 20px;
+    color: hsl(24, 5%, 18%);
+}
+
+.destaque h3 {
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+}
+
+.linha-horizontal{ 
+    border-top: 1px solid hsl(14, 45%, 36%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 376px) {
+
+    body {
+        margin: 10%;
+    }
+
+    .main {
+        width: 250px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
