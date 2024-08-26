@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+
+--stone-100: hsl(30, 54%, 90%);
+--stone-150: hsl(30, 18%, 87%);
+--stone-600: hsl(30, 10%, 34%);
+--stone-900: hsl(24, 5%, 18%);
+
+--brown-800: hsl(14, 45%, 36%);
+
+--rose-800: hsl(332, 51%, 32%);
+--rose-50: hsl(330, 100%, 98%);
+
+}
+
 body {
-    background-color: hsl(30, 54%, 90%);
-    display: flexbox;
+    background-color: var(--stone-100);
+    display: flex;
     min-width: 375px;
     max-width: 1440px;
     margin-top: 10%;
@@ -24,18 +39,18 @@ img {
 
 h1 {
     font-family: 'Young Serif';
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
 }
 
 p {
     font-size: 16px;
     font-family: Outfit;
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
 }
 
 h3 {
     font-family: 'Young Serif';
-    color: hsl(14, 45%, 36%);
+    color: var(--brown-800);
     font-weight: 400;
     padding-bottom: 10px;
 }
@@ -47,7 +62,7 @@ ul li, ol li {
     padding: 3px;
     font-family: Outfit;
     padding-left: 20px;
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
 }
 
 .main {
@@ -57,7 +72,7 @@ ul li, ol li {
 }
 
 .destaque {
-    background-color: hsl(330, 100%, 98%);
+    background-color: var(--rose-50);
     padding: 20px;
     border-radius: 10px;
 }
@@ -70,20 +85,51 @@ ul li, ol li {
     padding: 3px;
     font-family: Outfit;
     padding-left: 20px;
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
 }
 
 .destaque h2 {
     font-family: 'Outfit';
-    color: hsl(332, 51%, 32%);
+    color: var(--rose-800);
     font-size: 16px;
 }
 
 .linha-horizontal{ 
-    border-top: 1px solid hsl(14, 45%, 36%);
+    border-top: 1px solid var(--stone-150);
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 10px;    
+}
+
+.nutrition tr {
+    border-top: 1px solid var(--stone-150);
+    width: 50%;
+}
+
+.nutrition tr:first-child {
+    border-top: none;
+}
+
+.nutrition th {
+    padding-left: 2rem;
+    width: 50%;
+    color: var(--stone-600);
+    text-shadow: none;
+    padding-bottom: 2px;
+}
+
+.nutrition td {
+    color: var(--brown-800);
+    font-weight: 800;
+}
+
 
 @media (max-width: 376px) {
 
