@@ -33,7 +33,7 @@ p {
     color: hsl(24, 5%, 18%);
 }
 
-h2 {
+h3 {
     font-family: 'Young Serif';
     color: hsl(14, 45%, 36%);
     font-weight: 400;
@@ -73,9 +73,10 @@ ul li, ol li {
     color: hsl(24, 5%, 18%);
 }
 
-.destaque h3 {
+.destaque h2 {
     font-family: 'Outfit';
     color: hsl(332, 51%, 32%);
+    font-size: 16px;
 }
 
 .linha-horizontal{ 
